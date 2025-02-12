@@ -1,0 +1,7 @@
+server:
+  port: 8989
+
+client:
+  urls:
+    ms-user: http://localhost:8081
+

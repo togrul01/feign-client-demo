@@ -32,7 +32,7 @@ public class AccountService {
                 log.error("Unsupported currency detected: {}. Error: {}", request.getCurrency(), errorMessage);
                 throw new UnsupportedCurrencyException(errorMessage);
             }
-            asyncService.saveUser(builderUserRequest());
+            asyncService.saveUser();
             log.info("Account validated successfully for user: {}", request.getUserId());
 
         } catch (UserAlreadyExistsException ex) {
